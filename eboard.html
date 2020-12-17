@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Eboard</title>
+        <meta name="description" content="List of UIUC Evans Scholars Executive board">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="eboard.css">
+        <link href="Evans-Scholarship-Logo.jpg" rel="icon">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        </head>
+    <body>
+        <header>
+            <div class="logo">LOGO</div>
+            <nav>
+                <ul>
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a href="eBoard.html">E-Board</a></li>
+                    <li><a href="calender.html">Calender</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            </div>
+        </header>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+        <main>
+            <div class="main-container">
+<!--Executive Board-->
+                <h1>Executive Board 2020<hr></h1>
+                <div class="card-wrapper selectDisable">
+                <!--PRESIDENT-->
+                    <div class="card" id="presCard" onclick="togglePresident()">
+                        <img src="Images/Pat.png" alt="President img">
+                        <h2>Patrick McCormick</h2>
+                        <p class="position">President</p>
+                    </div>
+
+                    <article id="presDescription">
+                        Pat McCormack is the new President of the Illinois Evans House. 
+                        Pat is from West Chicago and caddied at Royal Fox Country Club. 
+                        He is majoring in Econometrics and Quantitative Economics, with a minor in Political Science. 
+                        When asked what he is most excited for this year as President 
+                        he said he’s excited for collaborating with scholars to make the house the best it can be!
+                    </article>
+                    <script>$('#presCard').click(function() {
+                        $('#presDescription').css('display', 'block');
+                        
+                    });
+                        </script>
+                <!--EXECUTIVE VICE PRESIDENT-->
+                    <div class="card" id="EVPcard" onclick="toggleEVP()">
+                        <img  src="Images/Gary.png" alt="VP of Finance img">
+                        <h2>Gary DeCaesre</h2>
+                        <p class="position">Executive Vice President</p>
+                    </div>
+                <!--ADMINISTRATIVE VICE PRESIDENT-->
+                    <div class="card" id="AVPcard" onclick="toggleAVP()">
+                        <img  src="Images/Pat-Cooke.png" alt="VP of ">
+                        <h2>Patrick Cooke</h2>
+                        <p class="position">Administrative Vice President</p>
+                    </div>
+                    <article id="EVPdescription">
+                        Gary DeCesare is our new Executive Vice President! 
+                        Gary is from Western Springs, Illinois and caddied at Lagrange Country Club. 
+                        He is studying Finance here at UIUC. 
+                        Gary’s goal for this year is to create unity and love within the diverse community of the Evans House by organizing house events.
+                    </article>
+                    <article id="AVPdescription">
+                        Our new Administrative Vice President is Patrick Cooke! 
+                        Pat is from Oak Forest and caddied at Midlothian Country Club. 
+                        He is an Actuarial Science Major, with a Business Minor! 
+                        When asked what he is most excited for this year serving on our Executive Board, 
+                        he said he’s excited to ensure that all scholars work together to keep the house in pristine condition!
+                    </article>
+                <!--INTERNAL VICE PRESIDENT-->
+                    <div class="card" id="IVPcard" onclick="toggleIVP()">
+                        <img  src="Images/Franky.png" alt="Board Member image">
+                        <h2>Frank Bongiovanni</h2>
+                        <p class="position">Internal Vice President</p>
+                    </div>
+                <!--VICE PRESIDENT OF FINANCE-->
+                    <div class="card" id="VPFcard" onclick="toggleVPF()">
+                        <img  src="Images/rob.png" alt="Board Member image">
+                        <h2>Robert Grayson</h2>
+                        <p class="position">Vice President of Finance</p>
+                    </div>
+                    <article id="IVPdescription">
+                        Franky Bongiovanni is our new Internal Vice President! 
+                        He is from Bartlett, IL - a Northwest Suburb of Chicago. 
+                        He caddied at Royal Fox Country Club in St. Charles. 
+                        Bonjo is a Civil Engineering Major with a primary specialization in Construction Management and a secondary in Structural Engineering. 
+                        He is most excited to help scholars, in any capacity he can as IVP, and create a better living environment!
+                    </article>
+                    <article id="VPFdescription">
+                        Help us give a warm welcome to our new VP of Finance, Robert Grayson! 
+                        He is from the West Side of Chicago. 
+                        He worked at Riverside Golf Club and is a Finance major. 
+                        He is most excited about allocating our money in order to strive for a better house!
+                    </article>
+                <!--VICE PRESIDENT OF COMMUNICATION-->
+                    <div class="card" id="VPCcard" onclick="toggleVPC()">
+                        <img  src="Images/mairead.png" alt="Board Member image">
+                        <h2>Mairead Skelton</h2>
+                        <p class="position">Vice President of Communication</p>
+                    </div>
+                <!--VICE PRESIDENT OF NEW SCHOLARS-->
+                    <div class="card" id="VPNScard" onclick="toggleVPNS()">
+                        <img  src="Images/Kevin.png" alt="VP of New Scholars img">
+                        <h2>Kevin Quinn</h2>
+                        <p class="position">Vice President of New Scholars</p>
+                    </div>
+                    <article id="VPCdescription">
+                        Mairead Skelton is the new VP of Communication for the Illinois Evans Scholars House! 
+                        She is from Chicago, IL and she caddied at Ridgemoor Country Club! 
+                        She is studying Speech and Hearing Science and minoring in Psychology. 
+                        she is most excited to expand our presence on social media, as well as around campus!
+                    </article>
+                    <article id="VPNSdescription">
+                        Kevin is from Westchester, IL. 
+                        He caddied at Chicago Highlands Golf Club. 
+                        He is majoring in Political Science with minors in Spanish and Urban Planning. 
+                        Kevin is most excited to help the freshmen (current and incoming) be the most successful they can be while at Illinois!
+                    </article>
+                </div>
+
+                <script src="eboard.js"></script>
+                
+                
+<!--House Chairs-->
+                <h1 id="chairs-title">House Chairs<hr></h2>
+                <div class="chairs-wrapper">
+                <!--SOCIAL CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-users"></i>
+                        <div>
+                        <h2>Lizette Schroeder</h2>
+                        <p>Social Chair</p>
+                        </div>
+                    </div>
+                <!--PHILANTHROPY CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                        <h2>Anthony Pasquale</h2>
+                        <p>Philanthropy Chair</p>
+                        </div>
+                    </div>
+                <!--COMPUTER CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-laptop-house"></i>
+                        <div>
+                        <h2>Luke Emano</h2>
+                        <p>Computer Chair</p>
+                        </div>
+                    </div>
+                <!--ATHLETIC CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-running"></i>
+                        <div>
+                        <h2>Joe Daley</h2>
+                        <p>Athletic Chair</p>
+                        </div>
+                    </div>
+                <!--ENVIRONMENTAL CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-globe-americas"></i>
+                        <div>
+                        <h2>Erick Flores</h2>
+                        <p>Environmental Chair</p>
+                        </div>
+                    </div>
+                <!--JUDICIAL CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-gavel"></i>
+                        <div>
+                        <h2>Fines Owens</h2>
+                        <p>Judicial Chair</p>
+                        </div>
+                    </div>
+                <!--MEAL JOB COORDINATOR-->
+                    <div class="chair">
+                        <i class="fas fa-utensils"></i>
+                        <div>
+                        <h2>Kyle Muehlfelder</h2>
+                        <p>Meal Job Coordinator</p>
+                        </div>
+                    </div>
+                <!--ALUMNI CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                        <h2>Molly Mehta</h2>
+                        <p>Alumni Chair</p>
+                        </div>
+                    </div>
+                <!--INCLUSION & DIVERSITY CHAIR-->
+                    <div class="chair">
+                        <i class="fas fa-people-arrows"></i>
+                        <div>
+                        <h2>Tyler Belisle,<br> Noella Bamigbola</h2>
+                        <p>Inclusion & Diversity Chair</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!--WGA Copyright-->
+        <footer>
+            <h3><hr id="footer-bar">This site and all contents are Copyright 2019, 
+                Western Golf Association, Evans Scholars Foundation. 
+                All rights reserved.</h3>
+        </footer>
+    </body>
+</html>

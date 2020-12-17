@@ -1,0 +1,135 @@
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    --UIUCorange: #E84A27;
+    --UIUCblue: #13294B;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: var(--UIUCblue);
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.logo {
+    color: var(--UIUCorange);
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+    cursor: default;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    font-family: 'Lato', sans-serif;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#home {
+    background-color: var(--UIUCorange);
+}
+
+header nav ul li:hover {
+    background-color: #E84A27;
+}
+
+.menu-toggle {
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 650px) {
+    header {
+        padding: 0 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: gray;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+}
+
+#Calender-section {
+    margin-top: 50px;
+}
+
+iframe {
+    width: 80%;
+    margin: 2% 10%;
+    height: 90vh;
+    border: 2px solid var(--UIUCblue);
+}
+
+
+footer {
+    background-color: var(--UIUCblue);
+    color: white;
+    padding: .5% 0;
+    cursor: default;
+}
+
+#footer-bar {
+    color: black;
+}
+
+footer h3 {
+    background-color: var(--UIUCblue);
+    width: 75%;
+    margin: 0 12.5%;
+    padding-bottom: 1%;
+    text-align: center;
+}
